@@ -1,9 +1,9 @@
 import type { MetadataRoute } from "next";
+import { siteUrl } from "./site";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+export const revalidate = 86400;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = siteUrl.replace(/\/$/, "");
   const pages = [
     ["/", "monthly", 1],
     ["/ad-budget-calculator/", "monthly", 0.9],
@@ -11,5 +11,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/reverse-cpm-calculator/", "monthly", 0.85],
     ["/cpm-formula/", "monthly", 0.8],
   ] as const;
-  return pages.map(([path, changeFrequency, priority]) => ({ url: `${base}${path}`, lastModified: new Date(), changeFrequency, priority }));
+  return pages.map(([path, changeFrequency, priority]) => ({ url: `${siteUrl}${path}`, lastModified: new Date(), changeFrequency, priority }));
 }

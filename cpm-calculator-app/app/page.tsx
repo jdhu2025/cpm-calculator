@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useState } from "react";
 import type { AnalysisResult } from "../lib/analysis";
+import { siteUrl } from "./site";
 
 type Mode = "cpm" | "budget" | "impressions";
 type AnalysisMode = "linked" | "independent";
@@ -79,7 +80,7 @@ export default function Home() {
     operatingSystem: "Any",
     description: "Calculate CPM, reverse-plan advertising budgets, compare channels, and create an AI campaign plan.",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    ...(process.env.NEXT_PUBLIC_SITE_URL ? { url: process.env.NEXT_PUBLIC_SITE_URL } : {}),
+    url: siteUrl,
   };
 
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /><div className="grain" aria-hidden="true" /><header className="site-header shell"><a className="brand" href="#top" aria-label="CPM Calculator home"><span className="brand-mark">↗</span><span>CPM<span className="brand-dot">.</span>calc</span></a><nav className="nav-links" aria-label="Primary navigation"><a href="#calculator">Calculator</a><a href="#ai-analysis">AI campaign planner</a><a href="#seo-guide">CPM guide</a></nav><a className="header-cta" href="#calculator">Start calculating <span>↘</span></a></header>

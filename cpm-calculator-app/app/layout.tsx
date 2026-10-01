@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import "../styles.css";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : undefined;
+import { siteUrl } from "./site";
 
 export const metadata: Metadata = {
   title: "CPM Calculator: Calculate Cost Per Thousand Impressions",
   description: "Free CPM Calculator: calculate CPM, reverse-plan ad budgets, compare channels, and get AI campaign strategies for reach, cost, and performance.",
-  metadataBase: siteUrl,
+  metadataBase: new URL(siteUrl),
   keywords: ["cpm calculator", "calculate cpm", "advertising budget calculator", "impressions calculator", "ad spend calculator"],
   alternates: { canonical: "/" },
   robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
