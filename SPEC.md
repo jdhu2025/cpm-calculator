@@ -21,6 +21,7 @@
 3. 规划指标扩展：支持用覆盖人数和频次理解“展示量不等于触达人数”。
 4. AI 方案分析：根据目标输出省钱、效果、性价比和先测试路径，并给出预算分配、时间节奏和风险假设。
 5. 结果一致性：修改任意计算或规划输入时，计算结果实时刷新，旧 AI 报告自动清除，避免使用过期结论。
+6. SEO 工具集：围绕不同搜索意图提供广告预算、展示量、反向 CPM 和 CPM 公式页面；相似关键词合并，避免关键词自相残杀。
 
 产品当前不承诺实时平台报价或投放效果；所有渠道成本、覆盖和时间建议都必须标记为估算，并说明假设。
 
@@ -373,14 +374,26 @@ AI 分析至少生成以下路径：
 
 ### 5.1 URL 和 SEO 主索引
 
-- 主 URL：`/cpm-calculator/`
+- 主 URL：部署域名根路径 `/`（当前 Next.js 实现）；如果未来迁移到工具集合，再将此工具独立到 `/cpm-calculator/` 并同步更新 canonical 和 sitemap。
 - 页面 Title：`CPM Calculator: Calculate Cost Per Thousand Impressions`
 - H1：`CPM Calculator`
 - Meta description：`Calculate CPM from ad spend and impressions. Estimate your budget, impressions, and cost per thousand impressions for free.`
-- Canonical：指向 `/cpm-calculator/`
+- Canonical：当前指向部署域名根路径 `/`，不能指向不存在的 `/cpm-calculator/`。
 - 页面必须允许索引；不要把相同内容复制到 `/calculate-the-cpm/`。
 
 如果以后使用独立域名，首页可以直接承载该页面；如果以后扩展成工具集合，首页作为工具目录，`/cpm-calculator/` 仍然是该关键词的唯一主页面。
+
+当前第一批 SEO 页面：
+
+| URL | 主关键词 | 页面意图 |
+|---|---|---|
+| `/` | `cpm calculator`、`calculate the cpm` | 核心计算工具，两个同意图关键词合并 |
+| `/ad-budget-calculator/` | `advertising budget calculator` | 根据 CPM 和目标展示量反推预算 |
+| `/impressions-calculator/` | `impressions calculator` | 根据预算和 CPM 估算展示量 |
+| `/reverse-cpm-calculator/` | `reverse cpm calculator` | 根据预算和目标展示量反推可接受 CPM |
+| `/cpm-formula/` | `cpm formula`、`how to calculate cpm` | 公式解释和示例型内容 |
+
+每个页面必须有独立 Title、H1、说明、公式、示例、FAQ 和内部链接。仅仅替换平台名称的重复页面不得批量生成。
 
 ### 5.2 页面模块顺序
 
