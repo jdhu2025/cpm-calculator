@@ -1,0 +1,12 @@
+.DS_Store
+
+# Generated files for the Next.js app
+cpm-calculator-app/node_modules/
+cpm-calculator-app/.next/
+cpm-calculator-app/out/
+
+# Local environment files and secrets
+cpm-calculator-app/.env*
+!cpm-calculator-app/.env.example
+
+*.log
