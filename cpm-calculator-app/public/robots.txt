@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://www.cpm-calculator.xyz/sitemap.xml
+Sitemap: https://www.cpm-calculator.xyz/google-sitemap.xml
