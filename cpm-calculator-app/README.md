@@ -59,4 +59,6 @@ AI_MODEL=
 5. 部署后访问 `/`，API 地址自动使用同域的 `/api/analyze-budget`。
 6. 确认 `https://your-domain.com/robots.txt` 和 `https://your-domain.com/sitemap.xml` 可以打开。
 
+站点地图和 robots 文件位于 `public/`，由 Vercel 直接以静态文件返回。部署新版本后，在 Google Search Console 删除旧的失败记录，再提交 `sitemap.xml`；提交后等待 Google 重新抓取，状态通常不会立即更新。
+
 不要把 `.env.local` 或真实的 `AI_API_KEY` 提交到 Git；只提交 `.env.example`。
