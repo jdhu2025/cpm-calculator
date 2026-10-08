@@ -237,6 +237,10 @@ label[for="spend-input"] small { font-size:10px !important; }
 .seo-article-main > h2, .seo-article-main article h2, .seo-faq h2 { margin:30px 0 10px; color:var(--paper); font-size:25px; letter-spacing:-.05em; }
 .seo-article-main > h2:first-of-type { margin-top:14px; }
 .seo-article-main p { color:#a1aaa1; font-size:14px; line-height:1.8; }
+.seo-takeaways { margin:28px 0 34px; padding:20px 24px; border:1px solid var(--line); border-left:3px solid var(--lime); background:rgba(185,223,76,.05); }
+.seo-takeaways h2 { margin:0 0 12px; color:var(--paper); font-size:20px; letter-spacing:-.04em; }
+.seo-takeaways ul { margin:0; padding-left:20px; color:#c4ccc2; font-size:14px; line-height:1.8; }
+.seo-takeaways li + li { margin-top:6px; }
 .formula-callout { border-left:3px solid var(--lime); padding:15px 18px; color:var(--lime) !important; background:rgba(201,240,106,.06); font:500 16px var(--mono) !important; }
 .related-tools { align-self:start; position:sticky; top:25px; border:1px solid var(--line); border-radius:15px; padding:20px; background:rgba(27,32,32,.7); }
 .related-tools h2 { margin:0 0 13px; font-size:22px; letter-spacing:-.05em; }

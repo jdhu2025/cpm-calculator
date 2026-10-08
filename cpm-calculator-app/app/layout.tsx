@@ -4,22 +4,22 @@ import { siteUrl } from "./site";
 
 export const metadata: Metadata = {
   title: "CPM Calculator: Calculate Cost Per Thousand Impressions",
-  description: "Free CPM Calculator: calculate CPM, reverse-plan ad budgets, compare channels, and get AI campaign strategies for reach, cost, and performance.",
+  description: "Free CPM calculator for ad spend and impressions. Calculate cost per 1,000 impressions, estimate budgets, compare channels, and plan your next campaign.",
   metadataBase: new URL(siteUrl),
   keywords: ["cpm calculator", "calculate cpm", "advertising budget calculator", "impressions calculator", "ad spend calculator"],
-  alternates: { canonical: "/" },
+  alternates: { canonical: `${siteUrl}/` },
   robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
   openGraph: {
     type: "website",
     title: "CPM Calculator: Calculate Cost Per Thousand Impressions",
-    description: "Calculate CPM, reverse-plan ad budgets, compare advertising channels, and get a free AI campaign strategy.",
+    description: "Free CPM calculator for ad spend and impressions. Calculate cost per 1,000 impressions, estimate budgets, compare channels, and plan your next campaign.",
     siteName: "CPM.calc",
-    url: "/",
+    url: `${siteUrl}/`,
   },
   twitter: {
     card: "summary",
     title: "CPM Calculator: Calculate Cost Per Thousand Impressions",
-    description: "Calculate CPM, reverse-plan ad budgets, compare channels, and plan campaigns with AI.",
+    description: "Free CPM calculator for ad spend and impressions. Calculate cost per 1,000 impressions, estimate budgets, compare channels, and plan your next campaign.",
   },
 };
 
