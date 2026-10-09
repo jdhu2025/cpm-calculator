@@ -1,0 +1,15 @@
+Platform,Type,URL,Audience fit,Submitted date,Status,Listing URL,Link rel,Referral sessions,Calculator completions,Next follow-up,Notes
+Product Hunt,Product launch,https://producthunt.com,High,,,,,,,Prepare launch assets first
+Indie Hackers,Community/product page,https://indiehackers.com,High,,,,,,,Use a genuine build story
+SaaSHub,Software directory,https://saashub.com,High,,,,,,,Describe as advertising/media planning tool
+Launching Next,Startup directory,https://launchingnext.com,Medium,,,,,,,Check current submission rules
+BetaPage,Beta directory,https://betapage.co,Medium,,,,,,,Use only if beta positioning is accurate
+Hacker News,Community post,https://news.ycombinator.com,Conditional,,,,,,,Only Show HN with a real technical story
+AlternativeTo,Alternative directory,https://alternativeto.net,Conditional,,,,,,,Submit after comparison page exists
+Crunchbase,Company profile,https://crunchbase.com,Conditional,,,,,,,Use only verifiable company facts
+G2,Software directory,https://g2.com,Conditional,,,,,,,Wait for genuine users/reviews
+Capterra,Software directory,https://capterra.com,Conditional,,,,,,,Do not pay for acceleration initially
+SourceForge,Open-source directory,https://sourceforge.net,Conditional,,,,,,,Only if the project is open source
+TheresAnAIForThat,AI directory,https://theresanaiforthat.com,Low for current product,,,,,,,Do not submit unless AI product scope is real
+FutureTools,AI directory,https://futuretools.io,Low for current product,,,,,,,Do not submit unless AI product scope is real
+Toolify,AI directory,https://toolify.ai,Low for current product,,,,,,,Do not submit unless AI product scope is real
