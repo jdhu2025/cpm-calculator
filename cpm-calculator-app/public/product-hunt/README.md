@@ -12,7 +12,7 @@ The images use the current CPM.calc visual system and show the actual product co
 
 ## Short demo video
 
-The repository includes `demo.gif` as an animated preview. If Product Hunt requires an MP4 instead, record the real production page rather than uploading a synthetic screen animation.
+The repository includes `demo.gif` as an animated preview. It is not an MP4 video. No MP4 is included because the local H.264 encoder was unavailable; record the real production page rather than uploading a synthetic screen animation.
 
 Suggested 24-second recording:
 
@@ -25,4 +25,3 @@ Suggested 24-second recording:
 | 20–24s | Return to the result and show the clean final state | `Free. No sign-up.` |
 
 Keep the cursor visible, avoid browser tabs or personal data, and export 1280×720 or 1920×1080 at 24/30 fps. Do not claim that the calculator guarantees campaign performance.
-
