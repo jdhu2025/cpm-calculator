@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { siteUrl } from "../site";
+import SiteFooter from "./SiteFooter";
 
 export type ResourceSection = {
   heading: string;
@@ -37,7 +38,7 @@ export function resourceMetadata(config: ResourcePageConfig): Metadata {
       publishedTime: config.published,
       modifiedTime: config.updated,
     },
-    twitter: { card: "summary", title: config.title, description: config.description },
+    twitter: { card: "summary", title: config.title, description: config.description, images: [`${siteUrl}/product-hunt/gallery-01-calculator.png`] },
   };
 }
 
@@ -94,6 +95,6 @@ export default function ResourcePage({ config }: { config: ResourcePageConfig })
         <aside className="related-tools resource-rail"><span className="card-overline">Use the numbers</span><h2>Free tools</h2>{tools.map(([href, label]) => <Link href={href} key={href}>{label}<span>↗</span></Link>)}<div className="related-cta"><strong>Need a plan, not just a result?</strong><p>Compare budget, reach, and channel trade-offs in the campaign planner.</p><Link href="/#ai-analysis">Open AI planner ↗</Link></div></aside>
       </section>
     </main>
-    <footer className="seo-page-footer shell"><span>© 2026 CPM.calc</span><span>Educational guidance, not a guarantee of ad performance.</span></footer>
+    <SiteFooter compact />
   </>;
 }

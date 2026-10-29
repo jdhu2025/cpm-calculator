@@ -15,11 +15,13 @@ export const metadata: Metadata = {
     description: "Free CPM calculator for ad spend and impressions. Calculate cost per 1,000 impressions, estimate budgets, compare channels, and plan your next campaign.",
     siteName: "CPM.calc",
     url: `${siteUrl}/`,
+    images: [{ url: `${siteUrl}/product-hunt/gallery-01-calculator.png`, width: 1270, height: 760, alt: "CPM.calc advertising calculator" }],
   },
   twitter: {
     card: "summary",
     title: "CPM Calculator: Calculate Cost Per Thousand Impressions",
     description: "Free CPM calculator for ad spend and impressions. Calculate cost per 1,000 impressions, estimate budgets, compare channels, and plan your next campaign.",
+    images: [`${siteUrl}/product-hunt/gallery-01-calculator.png`],
   },
 };
 

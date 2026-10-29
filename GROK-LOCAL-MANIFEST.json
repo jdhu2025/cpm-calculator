@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "project_name": "CPM.calc",
+  "workspace_root": "/Users/ken/hjd/code/SEO/cpm-calculator",
+  "site_root": "cpm-calculator-app",
+  "canonical_url": "https://www.cpm-calculator.xyz",
+  "canonical_state": "configured_in_source_live_check_pending",
+  "last_audited": "2026-10-29",
+  "support_alias": {
+    "public_alias": "",
+    "state": "planned_unverified",
+    "destination": "outside_repository_and_not_recorded_here",
+    "notes": "Do not publish an alias until a separate receiving destination is verified and a test message arrives. Inbound forwarding does not authorize outbound sending as the alias."
+  },
+  "read_order": [
+    "GROK-LOCAL-MANIFEST.json",
+    "SITE-DISTRIBUTION-AUDIT.md",
+    "BRAND-ACCOUNT-PACK.md",
+    "GROK-EXECUTION-SETUP.md",
+    "GROK-BACKLINK-AGENT-BRIEF.md",
+    "backlink-queue.csv",
+    "cpm-calculator-app/public/product-hunt/README.md"
+  ],
+  "active_assets": [
+    {
+      "path": "cpm-calculator-app/app/icon.svg",
+      "sha256": "27a3d0b47d9f99fa4cb8e6181cbd6e7f3cdf3d368ced041d9bbbdf35fb903b9a",
+      "dimensions": "64x64 viewBox",
+      "use": ["favicon"],
+      "upload": true
+    },
+    {
+      "path": "cpm-calculator-app/public/product-hunt/thumbnail.png",
+      "sha256": "67608d56e7d37a39eaf7089eaa1be1d4a3b27958006899f7a93f4726441cb31b",
+      "dimensions": "240x240",
+      "use": ["directory_logo", "product_hunt_thumbnail"],
+      "upload": true
+    },
+    {
+      "path": "cpm-calculator-app/public/product-hunt/gallery-01-calculator.png",
+      "sha256": "f54987f36a9de2083a74fc479be8f6f5a4ef3913c46e16947ac2228440287e14",
+      "dimensions": "1270x760",
+      "use": ["social_preview", "directory_screenshot", "product_hunt_gallery"],
+      "upload": true
+    },
+    {
+      "path": "cpm-calculator-app/public/product-hunt/gallery-02-planning.png",
+      "sha256": "8b52f0194d5034be2572e6ad6c6e00b9814399912ac795acd09278638c670567",
+      "dimensions": "1270x760",
+      "use": ["directory_screenshot", "product_hunt_gallery"],
+      "upload": true
+    },
+    {
+      "path": "cpm-calculator-app/public/product-hunt/gallery-03-metrics.png",
+      "sha256": "31b8b5386f4611df4abe7e40781130b17b32f65fd648a0a4ba8d74ddecb86020",
+      "dimensions": "1270x760",
+      "use": ["directory_screenshot", "product_hunt_gallery"],
+      "upload": true
+    },
+    {
+      "path": "cpm-calculator-app/public/product-hunt/demo.gif",
+      "sha256": "b50961401ee0b6d33150056ad84a0367ad4de430b8644ccd037521fa28808fbb",
+      "dimensions": "960x600",
+      "duration_seconds": 5.2,
+      "use": ["animated_preview"],
+      "upload": true
+    }
+  ],
+  "stale_assets": [],
+  "distribution_files": [
+    "BRAND-ACCOUNT-PACK.md",
+    "GROK-LOCAL-MANIFEST.json",
+    "GROK-LOCAL-IMPORT.md",
+    "GROK-EXECUTION-SETUP.md",
+    "GROK-BACKLINK-AGENT-BRIEF.md",
+    "SITE-DISTRIBUTION-AUDIT.md",
+    "backlink-queue.csv"
+  ],
+  "operating_limits": [
+    "Read the queue before every run and update it immediately after every candidate result.",
+    "Keep exactly one row per candidate domain and preserve the 31-column header.",
+    "Vet the actual page before filling a form or uploading an asset.",
+    "Skip CAPTCHA, hCaptcha, rate limits, login bypass, proxy rotation, payment, unclear rules, reciprocal links, votes, badges, and owner-only actions.",
+    "Use only verified product facts and active assets from this manifest and the brand pack.",
+    "Stop the daily batch after two consecutive failures, a payment request, or a human approval gate.",
+    "Do not store credentials, destinations, API keys, tokens, inbox contents, or browser profiles in this workspace."
+  ],
+  "capability_state": {
+    "local_workspace_read": "available",
+    "browser_navigation": "must_be_checked_by_local_client",
+    "authenticated_accounts": "not_verified",
+    "inbox_access": "not_configured",
+    "scheduler": "not_verified",
+    "production_dns": "not_verified_in_current_environment",
+    "external_ai_provider": "deployment_dependent"
+  }
+}

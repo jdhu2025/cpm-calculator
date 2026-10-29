@@ -40,7 +40,7 @@ cp .env.example .env.local
 然后填写：
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://your-domain.com
+NEXT_PUBLIC_SITE_URL=https://www.cpm-calculator.xyz
 AI_API_URL=
 AI_API_KEY=
 AI_MODEL=
@@ -57,7 +57,7 @@ AI_MODEL=
 3. 在 Vercel Project Settings → Environment Variables 中添加 `.env.example` 里的变量；
 4. Build Command 使用默认的 `next build`；
 5. 部署后访问 `/`，API 地址自动使用同域的 `/api/analyze-budget`。
-6. 确认 `https://your-domain.com/robots.txt` 和 `https://your-domain.com/sitemap.xml` 可以打开。
+6. 确认 `https://www.cpm-calculator.xyz/robots.txt` 和 `https://www.cpm-calculator.xyz/sitemap.xml` 可以打开。
 
 站点地图和 robots 文件位于 `public/`，由 Vercel 直接以静态文件返回。当前提交地址为 `google-sitemap.xml`；部署新版本后，在 Google Search Console 删除旧的失败记录，再提交 `google-sitemap.xml`；提交后等待 Google 重新抓取，状态通常不会立即更新。
 
