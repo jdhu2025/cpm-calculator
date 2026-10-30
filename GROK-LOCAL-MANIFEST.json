@@ -5,12 +5,12 @@
   "site_root": "cpm-calculator-app",
   "canonical_url": "https://www.cpm-calculator.xyz",
   "canonical_state": "configured_in_source_live_check_pending",
-  "last_audited": "2026-10-29",
+  "last_audited": "2026-10-30",
   "support_alias": {
-    "public_alias": "",
-    "state": "planned_unverified",
+    "public_alias": "support@cpm-calculator.xyz",
+    "state": "verified",
     "destination": "outside_repository_and_not_recorded_here",
-    "notes": "Do not publish an alias until a separate receiving destination is verified and a test message arrives. Inbound forwarding does not authorize outbound sending as the alias."
+    "notes": "Owner confirmed that the mailbox is working. Do not record the private destination here. Inbound forwarding does not authorize outbound sending as the alias."
   },
   "read_order": [
     "GROK-LOCAL-MANIFEST.json",

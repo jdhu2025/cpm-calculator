@@ -19,7 +19,7 @@ export default function SupportPage() {
     <main className="legal-page shell">
       <p className="eyebrow"><span className="eyebrow-dot" /> CPM.calc support</p>
       <h1>Support</h1>
-      <p className="legal-intro">Use this page to check the product scope and prepare a useful issue report. A public support inbox is not configured yet.</p>
+      <p className="legal-intro">Use this page to check the product scope and prepare a useful issue report. Email <a href="mailto:support@cpm-calculator.xyz">support@cpm-calculator.xyz</a> for help.</p>
       <section><h2>Before reporting a calculation issue</h2><p>Confirm that you used impressions rather than unique reach, that spend and impressions cover the same campaign scope, and that the formula matches the selected mode. The main calculator uses <strong>ad spend ÷ impressions × 1,000</strong>.</p></section>
       <section><h2>What to include</h2><p>Include the page URL, calculation mode, example inputs, browser, and the result you expected. Remove customer names, account identifiers, budgets under confidentiality, and other private campaign details.</p></section>
       <section><h2>Current product boundaries</h2><p>CPM.calc does not provide live platform quotes, account access, campaign execution, guaranteed performance, or a hosted history of your calculations. The campaign planner is an estimate and may use a configured external AI provider.</p></section>

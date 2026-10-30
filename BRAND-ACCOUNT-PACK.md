@@ -48,7 +48,7 @@ Advertising; Marketing Analytics; Media Planning; Calculator; Marketing Educatio
 
 ## Planned or unverified facts
 
-- Support alias such as `support@www.cpm-calculator.xyz`: `planned_unverified` until a separate destination is verified and receives a test message.
+- Support alias `support@cpm-calculator.xyz`: `verified` based on the owner's confirmation that the mailbox is working. The private receiving destination remains outside this repository.
 - Product Hunt launch state: existing project notes record a scheduled submission; public listing URL and current state are not verified in this environment.
 - Brand handles: candidate names below are not registered accounts.
 - Production routes, redirects, and social preview: source configured; direct runtime checks are pending.
@@ -76,7 +76,7 @@ These are candidates only. Do not describe any as owned until the platform prove
 - Live platform prices, benchmarks, or current market averages without dated sources and a real update owner.
 - Official partnership or affiliation with Meta, Google, YouTube, TikTok, LinkedIn, or any other platform.
 - Customer, user, revenue, funding, traffic, ranking, review, or conversion metrics not supported by a durable evidence record.
-- A verified support email alias before Cloudflare destination verification and a test message.
+- A different support alias or destination not verified by the owner.
 - Scheduler, inbox, browser permission, proxy, CAPTCHA solution, login, or submission success without direct capability or evidence.
 - Claims that the local fallback is an external AI provider or that the configured AI provider is always available.
 

@@ -39,7 +39,7 @@ Audit date: 2026-10-29 (Asia/Shanghai)
 - `robots.txt` allows public pages and disallows `/api/`; it points at the configured Google sitemap.
 - Both sitemaps use the configured canonical origin and now include the public legal/support pages.
 - Page metadata and structured data use `CPM.calc` and the configured canonical origin.
-- No support email alias is published. The support page states that the inbox is not configured.
+- Public support email: `support@cpm-calculator.xyz`, confirmed working by the owner on 2026-10-30. The private receiving destination is not recorded here.
 
 ## Runtime checks
 
@@ -50,7 +50,7 @@ Audit date: 2026-10-29 (Asia/Shanghai)
 | `npm run lint` | Not completed | Existing `next lint` script opens an interactive ESLint setup because no ESLint config exists |
 | Local route checks | Pending final build/server run | Start with `npm run dev` and check every route in the route table below |
 | Production route checks | Pending | DNS was unavailable from this environment; verify after deployment |
-| Support inbox verification | Pending | Configure a separate destination, verify it, and send a test message before publishing an alias |
+| Support inbox verification | Owner-confirmed | Keep the private receiving destination and credentials outside the repository; do not claim outbound sending authority from inbound forwarding |
 | Authenticated distribution submissions | Not attempted | Requires the owner's authorized account and final click |
 
 ## Route table
@@ -72,7 +72,7 @@ Audit date: 2026-10-29 (Asia/Shanghai)
 ## Unresolved gates
 
 1. Verify the production origin, redirects, canonical tags, legal routes, sitemap, robots, and social preview after deployment.
-2. Configure and test a separate support destination before publishing `support@www.cpm-calculator.xyz` or any other alias.
+2. Keep `support@cpm-calculator.xyz` monitored and update the public support path if the receiving destination changes.
 3. Confirm the current Product Hunt state from the owner's account. The existing status file records a scheduled submission but has no durable public listing URL.
 4. Inspect each distribution candidate's actual submission page, rules, cost, login, reciprocal-link, badge, voting, moderation, and owner-click requirements before changing a queue row to `submit`.
 5. Do not claim scheduler, browser permissions, inbox access, or external AI availability until the local client demonstrates each capability.
